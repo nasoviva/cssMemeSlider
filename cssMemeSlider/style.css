@@ -26,7 +26,7 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #413b3b;
+    background-color: #4f494b;
     padding: 6vw 6vw 3vw;
 }
 
@@ -37,7 +37,7 @@ input[type="radio"] {
 
 .images {
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s linear;
 }
 
 
@@ -47,7 +47,7 @@ input[type="radio"] {
     flex-basis: 100%;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s linear;
 }
 
 #slide1:checked~.images-wrapper .images .image:nth-child(1) {
@@ -85,7 +85,7 @@ input[type="radio"] {
 .names {
     margin: 3vw 0;
     display: flex;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s linear;
 }
 
 .name {
@@ -94,7 +94,7 @@ input[type="radio"] {
     flex-basis: 100%;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s linear;
 }
 
 #slide1:checked~.info .names-wrapper .names .name:nth-child(1) {
@@ -133,8 +133,8 @@ input[type="radio"] {
 .dot {
     width: 3vw;
     height: 3vw;
-    border: 0.5vw solid #3a80e1;
-    background-color: #3a80e1;
+    border: 0.5vw solid #86bee1;
+    background-color: #86bee1;
     border-radius: 100%;
     transition: all 0.3s linear;
 }
@@ -143,21 +143,34 @@ input[type="radio"] {
 #slide2:checked ~ .info .dots label[for="slide2"] .dot,
 #slide3:checked ~ .info .dots label[for="slide3"] .dot,
 #slide4:checked ~ .info .dots label[for="slide4"] .dot {
-    background-color: #413b3b;
-    border: 0.5vw solid #3a80e1;
+    background-color: #4f494b;
+    border: 0.5vw solid #86bee1;
 }
 
 #slide1:checked ~ .info .dots label[for="slide1"] .dot-wrapper:hover .dot,
 #slide2:checked ~ .info .dots label[for="slide2"] .dot-wrapper:hover .dot,
 #slide3:checked ~ .info .dots label[for="slide3"] .dot-wrapper:hover .dot,
 #slide4:checked ~ .info .dots label[for="slide4"] .dot-wrapper:hover .dot {
-    background-color: #413b3b;
+    background-color: #4f494b;
     border: 0.5vw solid #fff;
 }
 
 .dot-wrapper:not(:has(input:checked)):hover .dot {
     border: 0.5vw solid #fff;
     background-color: #fff;
+}
+
+#slide1:checked ~ .info .dots label[for="slide1"] .dot-wrapper:active .dot,
+#slide2:checked ~ .info .dots label[for="slide2"] .dot-wrapper:active .dot,
+#slide3:checked ~ .info .dots label[for="slide3"] .dot-wrapper:active .dot,
+#slide4:checked ~ .info .dots label[for="slide4"] .dot-wrapper:active .dot {
+    background-color: #4f494b;
+    border: 0.5vw solid #b4dadb;
+}
+
+.dot-wrapper:not(:has(input:checked)):active .dot {
+    border: 0.5vw solid #b4dadb;
+    background-color: #b4dadb;
 }
 
 @media (max-width: 20rem) {
