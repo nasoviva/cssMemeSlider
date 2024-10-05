@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><b>CssMemeSlider</b></h1>
+  <h1><a href="https://nasoviva.github.io/cssMemeSlider/cssMemeSlider/index.html">CssMemeSlider</a></h1>
 </div>
 <br>
 <p align="center">A project involves creating a functional image slider using only CSS,
